@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: projects
+Template Name: shfm
 */
 ?>
 

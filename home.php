@@ -5,6 +5,7 @@ Template Name: home
 ?>
 
 <?php get_header(); ?>
+
 <section class="music">
     <div class="container">
         <div class="music__inner">
