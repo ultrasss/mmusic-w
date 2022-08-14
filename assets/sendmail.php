@@ -11,29 +11,32 @@ $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHTML(true);
 
 //От кого письмо
-$mail->setFrom('ego_mpx@mail.ru*, ’Егор');
+$mail->setFrom('ego_mpx@mail.ru', 'Егор');
 //Кому отправить
+// $mail->addAddress('evgenii.z.i@yandex.ru', 'Eugene');
 $mail->addAddress('ego_mpx@mail.ru');
 //Тема письма
-$mail->Subject  = 'Привет! Это "Фрилансер по жизни"';
+$mail->Subject  = 'Привет! Это "НИКНЕЙМ"';
 
-//Рука
-$man = "Музыкант";
-if(S_POST['man'] == "Nomusic"){
-    $man = "НеМузыкант";
-}
+//Рука (РАЗОБРАТЬСЯ!)
+// print_r($_POST); - не было, для диагностики
+// exit('exit');
+// $man = "Музыкант";
+// if($_POST['man'] == "Nomusic"){
+//     $man = "НеМузыкант";
+// }
 
 //Тело письма
 $body = '<h1>Встречайте супер письмо!</h1>';
 
 if(trim(!empty($_POST['name']))){
-    $body. = '<p><strong>Имя:</strong> '.$_POST['name'].' </p>';
+    $body.='<p><strong>Имя:</strong> '.$_POST['name'].' </p>';
 }
 if(trim(!empty($_POST['email']))){
     $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 }
 if(trim(!empty($_POST['man']))){
-    $body.='<p><strong>Кто Вы?</strong> '.$_man['man'].'</p>';
+    $body.='<p><strong>Кто Вы?</strong> '.$_POST['man'].'</p>';
 }
 if(trim(!empty($_POST['age']))){
     $body.='<p><strong>Возраст:</strong> '.$_POST['age'].'</p>';
@@ -61,10 +64,10 @@ if (!empty($_FILES['image']['tmp_name'])) {
     if (!$mail->send()) {
         $message = 'Ошибка';
     } else {
-        $message - 'Данные отправлены!'; 
+        $message = 'Данные отправлены!'; 
     }
     
-    $response - ['message' => $message];
+    $response = ['message' => $message];
     
     header('Content-type: application/json'); 
     echo json_encode($response);

@@ -753,10 +753,12 @@ textarea.form__input {
 /* СТРАНИЦА ПРОЕКТОВ*/
 .projects__inner {
     display: flex;
+    align-items: center;
 }
 .projects__column {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
 }
 .projects__image {
 }

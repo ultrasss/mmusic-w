@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
         formData.append('image', formImage.files[0]);
 
         if (error === 0) {
-            form.classicList.add('_sending'); 
-             let response = await fetch ('sendmail.php', {
+            form.classList.add('_sending'); 
+             let response = await fetch ('/wp-content/themes/mmusic/assets/sendmail.php', {
                 method: 'POST',
                 body: formData
              });

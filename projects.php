@@ -5,19 +5,11 @@ Template Name: projects
 ?>
 <?php get_header(); ?>
 
-<!-- <?php the_content(); ?> -->
 
 <section class="projects">
-    <div class="container">
+    <div class="container_max-w"> 
+    <div class="container container-w">
         <div class="projects__inner">
-            <div class="projects__column">
-                <img class="projects__image" src="<?php the_field('projects_kivv-img'); ?>" alt="">
-                <a class="projects__title"><?php the_field('projects_kivv-title'); ?></a>
-                <p class="projects__text"><?php the_field('projects_kivv-text'); ?></p>
-                <button class="projects__start">
-                    <a class="projects__link" href="#">Подробнее</a>
-                </button>
-            </div>
             <div class="projects__column">
                 <img class="projects__image" src="<?php the_field('projects_shfs-img'); ?>" alt="">
                 <a class="projects__title"><?php the_field('projects_shfs-title'); ?></a>
@@ -34,7 +26,16 @@ Template Name: projects
                     <a class="projects__link" href="#">Подробнее</a>
                 </button>
             </div>
+            <div class="projects__column">
+                <img class="projects__image" src="<?php the_field('projects_kivu-img'); ?>" alt="">
+                <a class="projects__title"><?php the_field('projects_kivu-title'); ?></a>
+                <p class="projects__text"><?php the_field('projects_kivu-text'); ?></p>
+                <button class="projects__start">
+                    <a class="projects__link" href="#">Подробнее</a>
+                </button>
+            </div>
         </div>
+    </div>
     </div>
 </section>
 
