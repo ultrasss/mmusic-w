@@ -48,8 +48,8 @@ body{
 /* стили */
 
 .container{
-    max-width: 1220px;
-    padding: 0 10px;
+    max-width: 1200px;
+    /* padding: 0 10px; */
     margin: auto;
 }
 .container_max-w{
@@ -104,13 +104,24 @@ body{
     background-color: none;
 }
 
+.margin__area {
+    padding: 15px 0 8px 0;
+}
+.gray-color {
+    /* opacity: 0.6; */
+    background: radial-gradient(#252525 0%, #000000 100%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    /* z-index: 0; */
+}
+.transparent-color {
+    background: transparent;
+}
 /* хэдэр */
 
 .header__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 58px;
+    padding-top: 20px;
 }
 
 .logo {
@@ -157,7 +168,7 @@ body{
 .menu__link{
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
@@ -222,13 +233,13 @@ body{
     height: 62px;
     background: linear-gradient(273.97deg, #D03047 9.87%, #5D8810 52.92%, #43B570 94.21%);
     box-shadow: 0px 7px 20px rgba(255, 255, 255, 0.35);
-    border-radius: 22px;
+    border-radius: 10px;
 }
 .music__link{
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 23px;
     line-height: 21px;
     color: rgb(255, 255, 255);
 }
@@ -750,24 +761,105 @@ textarea.form__input {
     padding-bottom: 12px;
 }
 
+/* СТРАНИЦА ПОЛИТИКИ КОНФИДЕНЦАЛЬНОСТИ */
+.privacy__textarea {
+    /* box-shadow: 1px 1px 2px 0px #eceef2; */
+    /* background-color: #eceef2; */
+    background-color:#f7f9fd;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+.privacy__item{
+    display: flex;
+    justify-content: center;
+    
+}
+.privacy__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 900;   
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.065em;
+    /* padding: 2px 0 2px 0;  */
+    
+}
+
 /* СТРАНИЦА ПРОЕКТОВ*/
+.projects__page {
+    padding: 15px 0 8px 0;
+}
 .projects__inner {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: flex-start; */
+    margin-left: 0;
+    margin-right: 0;
+    
 }
-.projects__column {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-}
-.projects__image {
-}
+.projects__inner:after, .row:before{
+    content: '';
+    display: table;
+    clear: both;
+  }
 .projects__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 900;   
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.065em;
+    padding: 30px 0 40px 0;
+    text-align: center;
+}
+/* .projects__column {
+    display: flex;
+    flex-direction: column; 
+} */
+
+.projects__column{
+    float: left;
+    width: 33.33%;
+    padding: 0px 8px;
+    
+}
+.projects__column:first-child{
+    padding-right:16px;
+    padding-left:0px;
+}
+    
+.projects__column:last-child{
+    padding-right:0px;
+    padding-left:16px;
+}
+.projects__block {
+    background-color:#f7f9fd;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 8px;
+    
+}
+  
+  /* .block{
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    height: 200px;
+    background-color: #999;
+  } */
+
+.projects__image {
+    max-width:95%;
+    height: auto;
+    padding: 5%;
+}
+.projects__subtitle {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 900;   
     font-size: 20px;
     line-height: 24px;
+    padding: 60px 0 10px 0;
 }
 .projects__text {
     font-family: "Montserrat", sans-serif;
@@ -775,19 +867,43 @@ textarea.form__input {
     font-weight: 500;   
     font-size: 16px;
     line-height: 20px;
+    width: 100%;
+    text-align: justify;
+}
+.projects__start-button {
 }
 .projects__start {
-    width: 232px;
-    height: 62px;
-    background: linear-gradient(273.97deg, #D03047 9.87%, #5D8810 52.92%, #43B570 94.21%);
-    box-shadow: 0px 7px 20px rgba(255, 255, 255, 0.35);
-    border-radius: 22px;
+    width: 110px;
+    height: 40px;
+    color: #fff;
+    border-radius: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;   
 }
+.projects__start-1 {
+    background: rgb(6,14,131);
+    background: linear-gradient(0deg, rgb(151 154 193) 0%, rgb(97 101 140) 100%);
+    border: none;
+}
+.projects__start-1:hover {
+    background: rgb(0,3,255);
+    background: linear-gradient(0deg, rgba(120, 104, 104, 0.77) 0%, rgba(97, 101, 140, 0.77) 100%);
+}
+
 .projects__link {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 21px;
     color: rgb(255, 255, 255);
 }
