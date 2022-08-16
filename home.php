@@ -148,7 +148,7 @@ if( $myposts ){
                 <div class="music__about-info">
                     <a class="title title-about">О проекте</a> 
                     <a class="subtitle"><br><?php the_field('about-subtitle'); ?></a>
-                    <?php the_field('about-text'); ?>
+                    <a class="title title-about"><?php the_field('about-text'); ?><a>
                     <a class="music__about-text music__about-text-next" href="<?php echo get_page_link (110); ?>">Читать больше -></a>
                 </div>
             </div>

@@ -4,7 +4,7 @@
     <div class="container container-w margin__area">
         <div class="privacy__textarea">
             <div class="privacy__item">
-                <a class="privacy__title">Политика конфиденцальности. Стандартная форма.</a>
+                <a class="privacy__title">Политика конфиденциальности. Стандартная форма.</a>
             </div>
         </div>
         <div class="privacy__textarea">
