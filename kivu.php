@@ -81,9 +81,9 @@ Template Name: kivu
                             <a class="branch__subtitle-text"><?php the_field('kivu-branch-subtitle'); ?></a>
                         </div>
                         <div class="branch__button">
-                            <button class="branch__start branch__start-1">
-                                <a class="branch__link" href="#">начать</a>
-                            </button>
+                            <a class="branch__start branch__start-1" href="#b__link">
+                                <span class="branch__link">начать</span>
+                            </a>
                         </div>  
                     </div>
                 </div>
@@ -91,6 +91,7 @@ Template Name: kivu
         </section>
     </div>
     <section class="branch__block">
+    <a name="b__link"></a>
     <div class="container_max-w">
         <div class="container container-w">
             <div class="branch__inner">
@@ -112,7 +113,7 @@ Template Name: kivu
                         global $post;
                         $myposts = get_posts([ 
                             'numberposts'   =>  -1,
-                            'category'      =>  5
+                            'category'      =>  10
                             ]);
                             if( $myposts ){
                                 foreach( $myposts as $post ){

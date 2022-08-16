@@ -228,19 +228,46 @@ body{
     font-size: 22px;
     line-height: 30px;
 }
+.music__button {
+    position: relative;
+    display: inline-flex;
+    width: 232px;
+    height: 62px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 5px 18px rgba(255, 255, 255, 0.35);
+    background: #fff;
+    overflow: hidden; 
+}
 .music__start{
     width: 232px;
     height: 62px;
-    background: linear-gradient(273.97deg, #D03047 9.87%, #5D8810 52.92%, #43B570 94.21%);
-    box-shadow: 0px 7px 20px rgba(255, 255, 255, 0.35);
     border-radius: 10px;
+    background: linear-gradient(273.97deg, #D03047 9.87%, #5D8810 52.92%, #43B570 94.21%);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    display: inline-flex;
+    /* box-shadow: 0px 7px 20px rgba(255, 255, 255, 0.35); */
+    outline: none;
+    justify-content: center;
+    align-items: center;
 }
+
+/* .music__start + .music__start .music__button {
+    background: #fff;
+} */
+.music__start:hover {
+    opacity: 0.93;
+    /* background: linear-gradient(273.97deg, #f03047 9.87%, #7D8810 52.92%, #63B570 94.21%); */
+    
+}
+
 .music__link{
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 23px;
-    line-height: 21px;
+    font-size: 26px;
     color: rgb(255, 255, 255);
 }
 
@@ -277,14 +304,21 @@ body{
     padding: 0;
     left: -65px;
     background: url('../img/music-slider-left.png') 0 0 / 100% no-repeat;
+    transition: all 0.2s ease;
+}
+.music__slider .slick-arrow.slick-prev:hover {
+    transform: scale(1.12);
 }
 .music__slider .slick-arrow.slick-next {
     border: 0;
     padding: 0;
     right: -35px;
     background: url('../img/music-slider-right.png') 0 0 / 100% no-repeat;
+    transition: all 0.2s ease;
 }
-
+.music__slider .slick-arrow.slick-next:hover {
+    transform: scale(1.12);
+}
 .music__slider-item {
     /* width: 220px;
     height: 210px; */
@@ -867,7 +901,7 @@ textarea.form__input {
     width: 100%;
     text-align: justify;
 }
-.projects__start-button {
+.projects__button {
     padding-bottom: 16px;
 }
 .projects__start {
@@ -881,11 +915,13 @@ textarea.form__input {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
     7px 7px 20px 0px rgba(0,0,0,.1),
     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;   
+    outline: none;
+    justify-content: center;
+    align-items: center;   
 }
 .projects__start-1 {
     background: rgb(6,14,131);
@@ -913,7 +949,6 @@ textarea.form__input {
 .branch-background {
     width: 1600px;
     height: 1066px;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/shfs_img.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -970,25 +1005,28 @@ textarea.form__input {
     width: 231px;
     height: 60px;
     color: #fff;
-    border: 3px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     border-radius: 10px;
     background: transparent;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     box-shadow: 8px 8px 10px rgba(48, 27, 0, 0.19);
     /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
     7px 7px 20px 0px rgba(0,0,0,.1),
     4px 4px 5px 0px rgba(0,0,0,.1); */
-    outline: none;   
+    outline: none;
+    padding: 0;  
+    justify-content: center;
+    align-items: center;
 }
 .branch__start-1 {
-    background: rgba(255, 255, 255, 0.11);;
+    background: rgba(255, 255, 255, 0.11);
     /* border: none; */
 }
 .branch__start-1:hover {
-    background: rgba(255, 255, 255, 0.11);
+    background: rgba(255, 255, 255, 0.282);
 }
 
 .branch__link {
@@ -996,8 +1034,8 @@ textarea.form__input {
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 60px;
     color: #FFFFFF;
+    
 }
 
 /* второй экран*/

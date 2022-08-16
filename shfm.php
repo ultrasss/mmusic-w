@@ -81,16 +81,17 @@ Template Name: shfm
                             <a class="branch__subtitle-text"><?php the_field('shfm-branch-subtitle'); ?></a>
                         </div>
                         <div class="branch__button">
-                            <button class="branch__start branch__start-1">
-                                <a class="branch__link" href="#">начать</a>
-                            </button>
-                        </div>  
+                            <a class="branch__start branch__start-1" href="#b__link">
+                                <span class="branch__link">начать</span>
+                            </a>
+                        </div>   
                     </div>
                 </div>
             </div>      
         </section>
     </div>
     <section class="branch__block">
+    <a name="b__link"></a>
     <div class="container_max-w">
         <div class="container container-w">
             <div class="branch__inner">
@@ -112,7 +113,7 @@ Template Name: shfm
                         global $post;
                         $myposts = get_posts([ 
                             'numberposts'   =>  -1,
-                            'category'      =>  5
+                            'category'      =>  9
                             ]);
                             if( $myposts ){
                                 foreach( $myposts as $post ){
@@ -146,24 +147,6 @@ Template Name: shfm
                     <a class="title"><?php the_field('shfm-video__title-main'); ?></a>
                 </div>
                 <div class="video__inner">
-                    <div class="video__item"> 
-                        <div class="video__player"> <?php echo do_shortcode('[aiovg_video id=212]'); ?> </div>
-                        <div class="video__title">
-                            <a class="video__title-text">«Особенности менеджмента в сфере культуры» — Ираклий Хинтба</a> 
-                        </div>
-                        <div class="video__text"> 
-                            <a class="video__text-text">Тестововое видео по теме</a>
-                        </div>
-                    </div>
-                    <div class="video__item"> 
-                        <div class="video__player"> <?php echo do_shortcode('[aiovg_video id=212]'); ?> </div>
-                        <div class="video__title">
-                            <a class="video__title-text">«Особенности менеджмента в сфере культуры» — Ираклий Хинтба</a> 
-                        </div>
-                        <div class="video__text"> 
-                            <a class="video__text-text">Тестововое видео по теме</a>
-                        </div>
-                    </div>
                     <div class="video__item"> 
                         <div class="video__player"> <?php echo do_shortcode('[aiovg_video id=212]'); ?> </div>
                         <div class="video__title">

@@ -81,9 +81,9 @@ Template Name: shfs
                             <a class="branch__subtitle-text"><?php the_field('shfs-branch-subtitle'); ?></a>
                         </div>
                         <div class="branch__button">
-                            <button class="branch__start branch__start-1">
-                                <a class="branch__link" href="#">начать</a>
-                            </button>
+                            <a class="branch__start branch__start-1" href="#b__link">
+                                <span class="branch__link">начать</span>
+                            </a>
                         </div>  
                     </div>
                 </div>
@@ -91,53 +91,54 @@ Template Name: shfs
         </section>
     </div>
     <section class="branch__block">
-    <div class="container_max-w">
-        <div class="container container-w">
-            <div class="branch__inner">
-                <div class="branch__column">
-                    <img class="branch-img" src="<?php the_field('shfs-branch-img'); ?>" alt="">
-                </div>
-                <div class="branch__column">
-                    <div class="branch__colontitle">
-                        <div class="branch__colontitle-line"></div>
-                        <div class="branch__colontitle-note">
-                            <a class="branch__colontitle-note-text"><?php the_field('shfs-branch__colontitle-note'); ?></a>
+        <a name="b__link"></a>
+        <div class="container_max-w">
+            <div class="container container-w">
+                <div class="branch__inner">
+                    <div class="branch__column">
+                        <img class="branch-img" src="<?php the_field('shfs-branch-img'); ?>" alt="">
+                    </div>
+                    <div class="branch__column">
+                        <div class="branch__colontitle">
+                            <div class="branch__colontitle-line"></div>
+                            <div class="branch__colontitle-note">
+                                <a class="branch__colontitle-note-text"><?php the_field('shfs-branch__colontitle-note'); ?></a>
+                            </div>
+                        </div>
+                        <div class="branch__block-title">
+                            <a class="branch__block-title-text"><?php the_field('shfs-branch__block-title'); ?></a>
+                        </div>
+                        <div class="branch__slider">
+                            <?php
+                            global $post;
+                            $myposts = get_posts([ 
+                                'numberposts'   =>  -1,
+                                'category'      =>  5
+                                ]);
+                                if( $myposts ){
+                                    foreach( $myposts as $post ){
+                                    setup_postdata( $post );
+                            ?>
+                            <div class="branch__slider-item">
+                                <!-- <div> -->
+                                    <?php the_post_thumbnail(
+                                    array(600, 338)
+                                    // ,
+                                    // array(
+                                    //     'class' => 'branch__slider-image'
+                                    // )
+                                    ); ?>
+                                <!-- </div> -->
+                            </div>
+                            <?php } } wp_reset_postdata(); ?>
+                        </div>
+                        <div class="branch__block-text">
+                            <a class="branch__block-text-text"><?php the_field('shfs-branch__block-text'); ?></a>
                         </div>
                     </div>
-                    <div class="branch__block-title">
-                        <a class="branch__block-title-text"><?php the_field('shfs-branch__block-title'); ?></a>
-                    </div>
-                    <div class="branch__slider">
-                        <?php
-                        global $post;
-                        $myposts = get_posts([ 
-                            'numberposts'   =>  -1,
-                            'category'      =>  5
-                            ]);
-                            if( $myposts ){
-                                foreach( $myposts as $post ){
-                                setup_postdata( $post );
-                        ?>
-                        <div class="branch__slider-item">
-                            <!-- <div> -->
-                                <?php the_post_thumbnail(
-                                array(600, 338)
-                                // ,
-                                // array(
-                                //     'class' => 'branch__slider-image'
-                                // )
-                                ); ?>
-                            <!-- </div> -->
-                        </div>
-                        <?php } } wp_reset_postdata(); ?>
-                    </div>
-                    <div class="branch__block-text">
-                        <a class="branch__block-text-text"><?php the_field('shfs-branch__block-text'); ?></a>
-                    </div>
-                </div>
-            </div> 
-        </div>      
-    </div>
+                </div> 
+            </div>      
+        </div>
     </section>
     <section class="video">
         <div class="container_max-w">

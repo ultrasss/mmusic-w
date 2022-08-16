@@ -12,9 +12,11 @@ Template Name: home
             <div class="music__column">
                 <h1 class="music__title"><?php the_field('title'); ?></h1>
                 <h2 class="music__subtitle"><?php the_field('subtitle'); ?></h2>
-                <button class="music__start">
-                    <a class="music__link" href="<?php echo get_page_link (110); ?>">Начать</a>
-                </button>
+                <div class="music__button">
+                    <a class="music__start" href="<?php echo get_page_link (110); ?>">
+                        <span class="music__link">НАЧАТЬ</span>
+                    </a>
+                </div> 
             </div>
             <div class="music__column music__column-image">
                <div class="music-image">
@@ -41,7 +43,9 @@ if( $myposts ){
 ?>
                 <div class="music__slider-item">
                     <div class="music__slider-item-block">
-                        <div class="music__slider-text1"><?php the_title(); ?></div>
+                        <a href="<?php echo get_page_link (110); ?>">
+                            <div class="music__slider-text1"><?php the_title(); ?></div>
+                        </a>
                         <img class="music__slider-arrow" src="<?php bloginfo('template_url'); ?>/assets/img/music-slider-arrow.svg" alt="">  
                     </div>
                     <div>
