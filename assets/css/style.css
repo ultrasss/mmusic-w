@@ -96,7 +96,7 @@ body{
 .container_max-contacts{
     max-width: 1600px;
     margin: auto;
-    background: url('../img/contacts_bg.jpg') 0 0 / 100% no-repeat;
+    background: url(../img/contacts_bg.jpg) 0 0 / 100% no-repeat;
     color: #ffffff;
     padding-top: 50px;
 }
@@ -303,7 +303,7 @@ body{
     border: 0;
     padding: 0;
     left: -65px;
-    background: url('../img/music-slider-left.png') 0 0 / 100% no-repeat;
+    background: url(../img/music-slider-left.png) 0 0 / 100% no-repeat;
     transition: all 0.2s ease;
 }
 .music__slider .slick-arrow.slick-prev:hover {
@@ -313,7 +313,7 @@ body{
     border: 0;
     padding: 0;
     right: -35px;
-    background: url('../img/music-slider-right.png') 0 0 / 100% no-repeat;
+    background: url(../img/music-slider-right.png) 0 0 / 100% no-repeat;
     transition: all 0.2s ease;
 }
 .music__slider .slick-arrow.slick-next:hover {
@@ -563,7 +563,7 @@ section.gallery{
     margin: 0px auto;
     color: #fff;
 }
-.form *{
+.form * {
     outline: none;
 }
 .form__body {
@@ -574,7 +574,7 @@ section.gallery{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(51, 51, 51, 0.9) url("../img/loading.gif") center /50px no-repeat;
+    background: rgba(51, 51, 51, 0.9) url(../img/loading.gif) center /50px no-repeat;
     opacity: 0;
     visibility: hidden;
 }
@@ -589,9 +589,9 @@ section.gallery{
     padding-top: 10px;
 }
 .form__label {
-font-size: 16px;
-display: block;
-margin: 0px 0px 10x 0px;
+    font-size: 16px;
+    display: block;
+    margin: 0px 0px 10x 0px;
 }
 .form__input {
     height: 50px;
@@ -1127,7 +1127,7 @@ textarea.form__input {
     border: 0;
     padding: 0;
     left: -45px;
-    background: url('../img/branch-slider-left.png') 0 0 / 100% no-repeat;
+    background: url(../img/branch-slider-left.png) 0 0 / 100% no-repeat;
     
     /* opacity: 0.5; */
 }
@@ -1138,7 +1138,7 @@ textarea.form__input {
     border: 0;
     padding: 0;
     right: -45px;
-    background: url('../img/branch-slider-right.png') 0 0 / 100% no-repeat;
+    background: url(../img/branch-slider-right.png) 0 0 / 100% no-repeat;
 }
 .branch__slider .slick-arrow.slick-next:hover {
     opacity: 0.8;

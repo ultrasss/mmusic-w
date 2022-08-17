@@ -179,12 +179,12 @@ if( $myposts ){
                                 <div class="form__label">Кто вы?:</div>
                                 <div class="options">
                                     <div class="options__item">
-                                        <input id="formMusicMan" checked type="radio" value="music" name="man" class="options__input">
-                                        <label for="formMusicMan" class="options__label"><span>Музыкант</span></label>
+                                        <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+                                        <label for="formRightHanded" class="options__label"><span>Музыкант</span></label>
                                     </div>
                                     <div class="options__item">
-                                        <input id="formNoMusicMan" type="radio" value="Nomusic" name="man" class="options__input">
-                                        <label for="formNoMusicMan" class="options__label"><span>НеМузыкант</span></label>
+                                        <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+                                        <label for="formLeftHanded" class="options__label"><span>НеМузыкант</span></label>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +219,7 @@ if( $myposts ){
                     </div>
                 </div>
                 <div class="contacts__column-image">
-                    <img class="contacts-image__item" src="<?php bloginfo('template_url'); ?>/assets/img/contacts_img.jpg" alt="">
+                        <img class="contacts-image__item" src="<?php bloginfo('template_url'); ?>/assets/img/contacts_img.jpg" alt="">
                 </div>
             </div>
         </div>

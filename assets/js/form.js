@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('form');
-    form.addEventListener('submit',formSend);
+    form.addEventListener('submit', formSend);
 
     async function formSend(e) {
         e.preventDefault();
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (error === 0) {
             form.classList.add('_sending'); 
-             let response = await fetch ('/wp-content/themes/mmusic/assets/sendmail.php', {
+             let response = await fetch ('/wp-content/themes/mmusic/sendmail.php', {
                 method: 'POST',
                 body: formData
              });
