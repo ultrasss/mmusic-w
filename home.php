@@ -18,10 +18,8 @@ Template Name: home
                     </a>
                 </div> 
             </div>
-            <div class="music__column music__column-image">
-               <div class="music-image">
-                <img class="music-image__item" src="<?php the_field('main-img'); ?>" alt="">
-               </div> 
+            <div class="music__column">
+                <img src="<?php the_field('main-img'); ?>" alt="">
             </div>
         </div>
     </div>
@@ -173,10 +171,10 @@ if( $myposts ){
                             </div>
                             <div class="form__item">
                                 <label for="formEmail" class="form__label">E-mail*:</label>
-                                <input id="formEmail"type="text" name="email" class="form__input _req _email">
+                                <input id="formEmail" type="text" name="email" class="form__input _req _email">
                             </div>
                             <div class="form__item">
-                                <div class="form__label">Кто вы?:</div>
+                                <div class="form__title">Кто вы?</div>
                                 <div class="options">
                                     <div class="options__item">
                                         <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">

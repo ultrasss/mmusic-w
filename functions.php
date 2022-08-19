@@ -70,37 +70,25 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 	return $data;
 }
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+// настройка SMTP
+add_action( 'phpmailer_init', 'smtp_enable_mail_ru' );
+function smtp_enable_mail_ru( $phpmailer ){
 
-require 'phpmailer/src/Exception.php'; 
-require 'phpmailer/src/PHPMailer.php';
+	$phpmailer->IsSMTP();
 
-/**
- * Настройка SMTP
- *
- * @param PHPMailer $phpmailer объект мэилера
- */
-function mihdan_send_smtp_email( PHPMailer $phpmailer ) {
-	
-	$phpmailer = new PHPMailer(true);
-	$phpmailer->CharSet = 'UTF-8';
-	$phpmailer->setLanguage('ru', 'phpmailer/language/'); 
-	$phpmailer->IsHTML(true);
-	
-	$phpmailer->isSMTP();
-	$phpmailer->Host       = SMTP_HOST;
-	$phpmailer->SMTPAuth   = SMTP_AUTH;
-	$phpmailer->Port       = SMTP_PORT;
-	$phpmailer->Username   = SMTP_USER;
-	$phpmailer->Password   = SMTP_PASS;
-	$phpmailer->SMTPSecure = SMTP_SECURE;
-	$phpmailer->From       = SMTP_FROM;
-	$phpmailer->FromName   = SMTP_NAME;
+	$phpmailer->CharSet    = 'UTF-8';
 
-	
+	$phpmailer->Host       = 'ssl://smtp.mail.ru';
+	$phpmailer->Username   = 'mmusic.online@mail.ru';
+	$phpmailer->Password   = 'Sh_yF65>36';
+	$phpmailer->SMTPAuth   = true;
+	$phpmailer->SMTPSecure = 'ssl';
 
-  }
-  add_action( 'phpmailer_init', 'mihdan_send_smtp_email' );
+	$phpmailer->Port       = 465;
+	$phpmailer->From       = 'mmusic.online@mail.ru';
+	$phpmailer->FromName   = 'MY-Megasite';
+
+	$phpmailer->isHTML( true );
+}
 
 ?>

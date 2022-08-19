@@ -25,28 +25,28 @@
             <div class="header__inner">
                 <div class="logo">
                     <?php the_custom_logo(); ?>
-                    <a href="<?php echo get_page_link (15); ?>" class="logo__text">M | Music</a>
+                    <a href="<?php echo get_page_link (15); ?>">M | Music</a>
                 </div>
-
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a class="menu__link" href="<?php echo get_page_link (15); ?>">Главная</a>
+                            <a href="<?php echo get_page_link (15); ?>">Главная</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="<?php echo get_page_link (110); ?>">О проекте</a>
+                            <a href="<?php echo get_page_link (110); ?>">О проекте</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Контакты</a>
+                            <a href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="phone__item"> 
-                    <a class="phone__text" href="tel:<?php the_field('phone-number', 15); ?>">
-                    <img class="phone__img" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone">
-                    <?php the_field('phone', 15); ?>
+                <a href="tel:<?php the_field('phone-number', 15); ?>">
+                    <div class="phone__item"> 
+                        <img class="phone__img" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone">
+                        <a><?php the_field('phone', 15); ?></a>
+                    </div>
                 </a>
-                </div>      
+                      
                 <div class="social">
                     <ul class="social__list">
                         <li class="social__item">

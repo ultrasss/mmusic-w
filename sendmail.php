@@ -1,59 +1,56 @@
-<!-- 
-use PHPMailer\PHPMailer\PHPMailer;
- 
- /**
-  * Настройка SMTP
-  *
-  * @param PHPMailer $phpmailer объект мэилера
-  */
- function mihdan_send_smtp_email( PHPMailer $mail ) {
-   
- }
- add_action( 'phpmailer_init', 'mihdan_send_smtp_email' ); -->
-
 <?php
-// //От кого письмо
-// $phpmailer->setFrom('mmusic.online@mail.ru', 'Егор');
-// //Кому отправить
-// // $mail->addAddress('evgenii.z.i@yandex.ru', 'Eugene');
-// $phpmailer->addAddress('ego_mpx@mail.ru');
-// //Тема письма
-// $phpmailer->Subject('Привет! Это НИКНЕЙМ');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-// Кому отправляем
-$to = 'you@yourdomain.com';
-   
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
+
+    $mail = new PHPMailer(true);
+    $mail->CharSet = 'UTF-8';
+    $mail->setLanguage('ru', 'phpmailer/language/'); 
+    $mail->IsHTML(true);
+    $mail->IsSMTP();
+    // Настройки SMTP
+
+$mail->Host = 'ssl://smtp.mail.ru';    
+$mail->Username = 'mmusic.online@mail.ru';
+$mail->Password = 'mKNXTrLEbgpA2hsktJTW';
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
+
+
+//От кого письмо
+$mail->setFrom('mmusic.online@mail.ru', 'Егор');
+// Кому отправить
+$mail->addAddress('ego_mpx@mail.ru');
 // Тема письма
-$subject = 'Проверка wp_mail';
-  
-// Само сообщение
-$message = 'Это тестовое сообщение';
-   
-// Загружаем только ядро WordPress
-define( 'WP_USE_THEMES', false );
-require( 'wp-load.php' );
-
+$mail->Subject = 'Привет! Это Второе дыхание';
 
 
 //Рука (РАЗОБРАТЬСЯ!)
 // print_r($_POST); - не было, для диагностики
 // exit('exit');
-// $man = "Музыкант";
-// if($_POST['man'] == "Nomusic"){
-//     $man = "НеМузыкант";
-// }
+$hand = "Музыкант";
+if($_POST['hand'] == "left"){
+    $hand = "НеМузыкант";
+}
 
 //Тело письма
 $body = '<h1>Встречайте супер письмо!</h1>';
 
+
+
 if(trim(!empty($_POST['name']))){
-    $body.='<p><strong>Имя:</strong> '.$_POST['name'].' </p>';
+    $body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
 }
 if(trim(!empty($_POST['email']))){
     $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 }
-if(trim(!empty($_POST['man']))){
-    $body.='<p><strong>Кто Вы?</strong> '.$_POST['man'].'</p>';
+if(trim(!empty($_POST['hand']))){
+    $body.='<p><strong>Кто Вы?</strong> '.$hand.'</p>';
 }
 if(trim(!empty($_POST['age']))){
     $body.='<p><strong>Возраст:</strong> '.$_POST['age'].'</p>';
@@ -77,29 +74,22 @@ if (!empty($_FILES['image']['tmp_name'])) {
     $mail->Body = $body;
     
     //Отправляем
-    // if ($phpmailer->send()) {
-    //     $message = 'Ошибка';
-    // } else {
-    //     $message = 'Данные отправлены!'; 
-    // }
-    
-
-
-
-    // Отправляем письмо
-    $sent_message = wp_mail( $to, $subject, $message );
-      
-    if ( $sent_message ) {
-        // Если сообщение успешно отправилось
-        echo 'Всё чётко настроил, бро!';
+    if (!$mail->send()) {
+        $message = 'Ошибка';
     } else {
-        // Ошибки при отправке
-        echo 'Где-то ты лоханулся знатно!';
+        $message = 'Данные отправлены!'; 
     }
-
-
-
-
+    
+    // // Отправляем письмо
+    // $sent_message = wp_mail( $to, $subject, $message );
+      
+    // if ( $sent_message ) {
+    //     // Если сообщение успешно отправилось
+    //     echo 'Всё чётко настроил, бро!';
+    // } else {
+    //     // Ошибки при отправке
+    //     echo 'Где-то ты лоханулся знатно!';
+    // }
 
     $response = ['message' => $message];
     
