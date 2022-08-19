@@ -1,0 +1,26 @@
+1. Экран под ширину 1200px и выше
+@media screen and (min-width: 1200px) {
+.class {
+    display: block;
+}
+}
+
+2. Экран под ширину 992 - 1199
+@media (min-width: 992px) and (max-width: 1199px) {
+.class {
+    display: block;
+}
+}
+
+3. Планшет под ширину 768-991
+    @media (min-width: 768px) and (max-width: 991px) {
+.class {
+    display: block;
+}
+}
+4. Телефон 767 и ниже
+@media screen and (max-width: 767px) {
+.class {
+    display: block;
+}
+}
