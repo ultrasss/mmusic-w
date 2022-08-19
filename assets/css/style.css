@@ -48,7 +48,7 @@ body{
 /* стили */
 
 .container{
-    width: 1150px;
+    
     padding: 0 5px;
     margin: auto;
     /* position: relative; */
@@ -61,21 +61,19 @@ body{
     }
 @media screen and (max-width: 1199px) {
     .container {
-        width: 1150px;
+        width: 950px;
 }
 }
 @media screen and (max-width: 991px) {
     .container {
-        width: 1150px;
+        width: 100%;
     }
 }
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .container {
-        width: 1150px;
+        width: 100%;
     }
-}
-
-
+} */
 
 
 .container_max-w{
