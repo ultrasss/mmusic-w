@@ -80,17 +80,6 @@ if (!empty($_FILES['image']['tmp_name'])) {
         $message = 'Данные отправлены!'; 
     }
     
-    // // Отправляем письмо
-    // $sent_message = wp_mail( $to, $subject, $message );
-      
-    // if ( $sent_message ) {
-    //     // Если сообщение успешно отправилось
-    //     echo 'Всё чётко настроил, бро!';
-    // } else {
-    //     // Ошибки при отправке
-    //     echo 'Где-то ты лоханулся знатно!';
-    // }
-
     $response = ['message' => $message];
     
     header('Content-type: application/json'); 

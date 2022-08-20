@@ -59,7 +59,7 @@
                 <a href="tel:<?php the_field('phone-number', 15); ?>">
                     <div class="phone__item"> 
                         <img class="phone__img" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone">
-                        <a><?php the_field('phone', 15); ?></a>
+                        <span><?php the_field('phone', 15); ?></span>
                     </div>
                 </a>
                       

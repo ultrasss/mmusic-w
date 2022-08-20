@@ -8,6 +8,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/css/slick.css' );
     wp_enqueue_style( 'magnific-popup', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/style.css' );
+	wp_enqueue_style( 'xsmax', get_template_directory_uri() . '/assets/css/xsmax.css' );
 
     wp_deregister_script('jquery' );
     wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js');
