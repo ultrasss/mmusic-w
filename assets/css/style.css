@@ -199,7 +199,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 15px;
+    
 }
 /* .custom-logo {
     max-width: 100%;
@@ -232,22 +232,36 @@ body{
         
     }
 } 
+
+.menu__list {
+    display: flex;
+}
 @media screen and (max-width: 428px) {
     .menu__list {
         padding: 0px;
-        display: flex;
         align-items: center
     }
 } 
 
-padding-inline-start
+
 .menu__item{
     display: inline-block;
 }
-
+429 - 713
 .menu__item + .menu__item{
     padding-left: 10px;
 }
+@media screen and (max-width: 767px) {
+   .menu__item{
+        padding-left: 0px;
+    }
+} 
+@media screen and (max-width: 428px) {
+    menu__item{
+        padding-left: 0px;
+    }
+} 
+
 .menu__item a{
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -266,7 +280,8 @@ padding-inline-start
 }
 @media screen and (max-width: 767px) {
     .menu__item a {
-        /*настроить*/
+        font-weight: 400;
+        padding: 0 10px;
         
 }
 }
@@ -274,7 +289,7 @@ padding-inline-start
     .menu__item a {
         font-size: 10px;
         font-weight: 400;
-        padding: 0 10px;
+        padding: 0 8px;
     }
 } 
 
@@ -738,7 +753,7 @@ section.gallery{
       flex: 33.3%;
     }
   }
-  @media (max-width: 768px){
+  @media (max-width: 767px){
     .gallery-item{
       flex: 50%;
     }
