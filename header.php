@@ -43,6 +43,9 @@
                     <?php the_custom_logo(); ?>
                     <a href="<?php echo get_page_link (15); ?>">M | Music</a>
                 </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">

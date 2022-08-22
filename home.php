@@ -158,8 +158,8 @@ if( $myposts ){
     </div>
 </section>
 <section class="contacts">
-    <div class="container_max-contacts">
-        <div class="container container-wthnbg">
+    <!-- <div class="container_max-contacts"> -->
+        <div class="container">
             <div class="contacts__inner">
                 <div class="contacts__column-form">
                     <div class="form">
@@ -221,7 +221,7 @@ if( $myposts ){
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </section>
 
 <?php get_footer(); ?>
