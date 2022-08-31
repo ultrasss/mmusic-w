@@ -192,23 +192,145 @@ body{
     background: transparent;
 }
 /* хэдэр */
-
-.header__inner{
+.header {
+    position: fixed;
     width: 100%;
-    margin: 0 auto;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 2;
+}
+.header__inner{
+    position: relative;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
+}
+.logo {
+    flex: 0 0 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+.logo a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;   
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
 }
 .header__burger {
     display: none;
 }
+.menu__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.menu__item{
+    display: inline-block;
+}
+.menu__item + .menu__item{
+    padding-left: 10px;
+}
+.menu__item a{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 0 20px;
+    transition: all .3s;
+}
+.menu__item a:hover{
+    /* background-color: rgb(20, 83, 138); */
+    /* font-weight: 700; */
+    text-shadow: 13px 3px 15px #ffffff;
+    /* color: rgb(155, 11, 54);  */
+}
+.phone__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+.phone__item span {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    
+}
+.phone__img {
+    margin-right: 5px;
+}
+.social {
+    position: relative;
+    z-index: 3;
+}
+.social__item {
+    display: inline-block;
+}
+.social__item + .social__item{
+    padding-left: 5px;
+}
+
 @media screen and (max-width: 767px) {
+    .header__inner {
+        height: 50px;
+    }
+    .logo {
+        flex: 0 0 40px;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: gray;
+        padding: 70px 0px 0px 0px;
+    }
+    .menu__list {
+        padding: 0px;
+        align-items: center;
+        display: block;
+
+    }
+    .menu__item{
+        padding-left: 0px;
+        margin: 0px 0px 20px 0;
+    }
+    .menu__item a {
+        font-weight: 400;
+        padding: 0 10px;
+        
+}
     .header__burger {   
         display: block;
         position: relative;
         width: 30px;
         height: 20px;
+        z-index: 3;
     }
     .header__burger span{
         position: absolute;
@@ -225,35 +347,24 @@ body{
         position: absolute;
         width: 100%;
         height: 2px;
-        left: 0;     
+        left: 0;
     }
     .header__burger:before {
         top: 0;
     }
-    .header__burger {
+    .header__burger:after {
         bottom: 0;
     }
-} 
-.logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-/* .custom-logo {
-    max-width: 100%;
-    margin-right: 10px;
-} */
-.logo a {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;   
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height, or 122%  */
-    /* letter-spacing: 0.065em; */
-    color: #FFFFFF;
-    
+    .header__inner {
+        display: block;
+    }
+    .phone__item,
+    .phone__item span {
+        display: none;
+    }
+    .social {
+        display: none;
+    }
 }
 @media screen and (max-width: 428px) {
     .logo a {   
@@ -268,137 +379,10 @@ body{
         object-position: center;
         
     }
-} 
-@media screen and (max-width: 767px) {
-    
-} 
-
-.menu__list {
-    display: flex;
-}
-/* @media screen and (max-width: 428px) {
-    .menu__list {
-        padding: 0px;
-        align-items: center
-    }
-}  */
-@media screen and (max-width: 767px) {
-    .menu__list {
-        padding: 0px;
-        align-items: center
-    }
-}
-
-.menu__item{
-    display: inline-block;
-}
-
-.menu__item + .menu__item{
-    padding-left: 10px;
-}
-@media screen and (max-width: 767px) {
-   .menu__item{
-        padding-left: 0px;
-    }
-} 
-/* @media screen and (max-width: 428px) {
-    menu__item{
-        padding-left: 0px;
-    }
-}  */
-
-.menu__item a{
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    color: #FFFFFF;
-    padding: 0 20px;
-    transition: all .3s;
-}
-/* @media screen and (max-width: 815px) {
-    .menu__item a {
-        font-weight: 400;
-        padding: 0 12px;
-        
-}   
-} */
-@media screen and (max-width: 767px) {
-    .menu__item a {
-        font-weight: 400;
-        padding: 0 10px;
-        
-}
-}
-/* @media screen and (max-width: 428px) {
-    .menu__item a {
-        font-size: 10px;
-        font-weight: 400;
-        padding: 0 8px;
-    }
-}  */
-
-
-.menu__item a:hover{
-    /* background-color: rgb(20, 83, 138); */
-    /* font-weight: 700; */
-    text-shadow: 13px 3px 15px #ffffff;
-    /* color: rgb(155, 11, 54);  */
-}
-.phone__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.phone__item span {
-    display: flex;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-    /* padding-left: 5px; */
-}
-@media screen and (max-width: 767px) {
-    .phone__item span {
-        display: none;
-    }
-} 
-.phone__img {
-    margin-right: 5px;
-}
-/* @media screen and (max-width: 428px) {
-    .phone__item a {
-    font-weight: 400;
-    font-size: 8px;
-    }
-}  */
-
-/* @media screen and (max-width: 1199px) {
-    .social {
-        display: none;
-    }
-}
-@media screen and (max-width: 991px) {
-    .social {
-        display: none;
-    }
-} */
-@media screen and (max-width: 767px) {
-    .social {
-        display: none;
-    }
-}
-.social__item {
-    display: inline-block;
-}
-.social__item + .social__item{
-    padding-left: 5px;
-}
+}  
 /*наполнение 1 страницы*/
 .music__inner{
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
     
