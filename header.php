@@ -38,34 +38,33 @@
 <body>
     <header class="header">
          <div class="container">
-            <div class="header__inner">
+            <div class="header__body">
                 <div class="logo">
                     <?php the_custom_logo(); ?>
-                    <a href="<?php echo get_page_link (15); ?>">M | Music</a>
+                    <a href="<?php echo get_page_link (15); ?>" class="header__link">M | Music</a>
                 </div>
                 <div class="header__burger">
                     <span></span>
                 </div>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="<?php echo get_page_link (15); ?>">Главная</a>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="<?php echo get_page_link (15); ?>" class="header__link">Главная</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="<?php echo get_page_link (110); ?>">О проекте</a>
+                        <li>
+                            <a href="<?php echo get_page_link (110); ?>" class="header__link">О проекте</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#">Контакты</a>
+                        <li>
+                            <a href="#" class="header__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <a href="tel:<?php the_field('phone-number', 15); ?>">
+                <a href="tel:<?php the_field('phone-number', 15); ?>" class="phone__number">
                     <div class="phone__item"> 
                         <img class="phone__img" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone">
                         <span><?php the_field('phone', 15); ?></span>
                     </div>
-                </a>
-                      
+                </a>    
                 <div class="social">
                     <ul class="social__list">
                         <li class="social__item">

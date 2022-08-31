@@ -16,6 +16,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('magnific-popup');
+	wp_enqueue_script( 'burgermenu', get_template_directory_uri() . '/assets/js/burger_menu.js', array(), 'null', true );
     wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.min.js', array('jquery'), 'null', true );
     wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array(), 'null', true );
     wp_enqueue_script( 'gallery', get_template_directory_uri() . '/assets/js/gallery.js', array('magnific-popup'), 'null', true );

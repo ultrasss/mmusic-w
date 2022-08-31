@@ -3,73 +3,8 @@
 Template Name: kivu
 */
 ?>
-
-<!-- <div class="kivu-background">
-    
-</div> -->
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="ie=edge">
-    <title>M | Music</title>
-    
-    <?php wp_head(); ?>
-</head>
-
-
-<body>
+<?php get_header(); ?>
     <div class="branch-background kivu-background">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <div class="logo">
-                        <?php the_custom_logo(); ?>
-                        <a href="<?php echo get_page_link (15); ?>" class="logo__text">M | Music</a>
-                    </div>
-
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__link" href="<?php echo get_page_link (15); ?>">Главная</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="<?php echo get_page_link (110); ?>">О проекте</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="phone__item"> 
-                        <a class="phone__text" href="tel:<?php the_field('phone-number', 15); ?>">
-                        <img class="phone__img" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone">
-                        <?php the_field('phone', 15); ?>
-                    </a>
-                    </div>      
-                    <div class="social">
-                        <ul class="social__list">
-                            <li class="social__item">
-                                <a href="<?php the_field('vk', 15); ?>" class="social__link">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/img/VK_icon.png" alt="Иконка Вконтакте" width="65" height="65">
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="<?php the_field('telegram', 15); ?>" class="social__link">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/img/TG_icon.png" alt="Иконка Телеграма" width="65" height="65">
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="<?php the_field('youtube', 15); ?>" class="social__link">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/img/YT_icon.png" alt="Иконка Youtube" width="65" height="65">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>   
-        </header>
         <section class="branch__main">
             <div class="container">
                 <div class="branch__main-inner">
@@ -164,36 +99,8 @@ Template Name: kivu
     </section>
      
                     
+    <?php get_footer(); ?>
 
-    <footer class="footer container_max-w gray-color">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="logo">
-                    <?php the_custom_logo(); ?>
-                    <a href="<?php echo get_page_link (15); ?>" class="logo__text">M | Music</a>
-                </div>
-                <div class="footer__copyright">
-                    <a class="footer__copyright-link">2022 © Все права защищены</a>
-                    <a class="privacy" href="<?php echo get_page_link (90); ?>">Политика конфиденциальности</a>
-                </div>
-
-                <div class="footer__contacts">
-                    <a class="footer__contacts-link" href="tel:<?php the_field('phone-number', 15); ?>">
-                        <img class="footer__contacts-img" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone">
-                        <span><?php the_field('phone', 15); ?></span>
-                    </a>
-                    <a class="footer__contacts-link" href="mailto:<?php the_field('e-mail', 15); ?>">
-                        <img class="footer__contacts-img" src="<?php bloginfo('template_url'); ?>/assets/img/mail.svg" alt="">
-                        <span><?php the_field('e-mail', 15); ?></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <?php wp_footer(); ?>
-</body>
-</html>
 
 
 
