@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 ul{
+    padding: 0;
     margin: 0;
     list-style: none;
 }
@@ -32,9 +33,9 @@ body{
     letter-spacing: 0.065em;
     padding-top: 50px;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .title{
-        font-size: 25px;
+    font-size: 25px;
     line-height: 37px;
     letter-spacing: 0.065em;
     padding-top: 20px;
@@ -56,7 +57,6 @@ body{
 /* стили */
 
 .container{
-    
     margin: 0 auto;
     padding: 0 5px;
 }
@@ -72,53 +72,38 @@ body{
 }
 @media screen and (max-width: 991px) {
     .container {
-        width: 100%;
+        width: 730px;
     }
 }
  @media screen and (max-width: 767px) {
     .container {
-        width: 86%;
+        width: 100%;
     }
 } 
-/* @media screen and (max-width: 428px) {
-    .container {
-        width: 281px;
-    }
-}   */
 
 .container_max-w{
     padding: 0 5px;
     margin: 0 auto;
     background-color: #ffffff;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
     .container_max-w {
         width: 1583px;
     }
     }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
     .container_max-w {
         width: 1150px;
 }
 } 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
     .container_max-w {
         width: 950px;
 }
 }
-@media screen and (max-width: 991px) {
-    .container_max-w {
-        width: 751px;
-    }
-}
  @media screen and (max-width: 767px) {
     .container_max-w {
         width: 767px;
-    }
-} 
-@media screen and (max-width: 428px) {
-    .container_max-w {
-        width: 428px;
     }
 } 
 
@@ -217,7 +202,6 @@ body{
   
 }
 .logo {
-    flex: 0 0 60px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -237,6 +221,7 @@ body{
 }
 .header__list {
     display: flex;
+    align-items: center;
     position: relative;
     z-index: 2;
     
@@ -301,7 +286,17 @@ body{
         height: 50px;
     }
     .logo {
-        flex: 0 0 40px;
+        margin: 0 auto;
+    }
+    .logo a {   
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .custom-logo {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center; 
     }
     .header__burger {   
         display: block;
@@ -383,20 +378,6 @@ body{
         display: none;
     }
 }
-@media screen and (max-width: 428px) {
-    .logo a {   
-        font-size: 8px;
-        line-height: 8px;
-       
-    }
-    .custom-logo {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: center;
-        
-    }
-}  
 /*наполнение 1 страницы*/
 .music__inner{
     padding-top: 100px;
@@ -716,7 +697,7 @@ body{
 .triggers__text {
     padding-bottom: 50px;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .triggers__text {
         padding-bottom: 20px;
     }
@@ -727,7 +708,7 @@ body{
     justify-content: space-between;
     padding-bottom: 50px;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .triggers__native {
         flex-direction: column;
         padding-bottom: 30px;
@@ -752,7 +733,7 @@ body{
     font-size: 20px;
     line-height: 24px;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .triggers__native-item-title {
         font-weight: 900;   
     font-size: 15px;
@@ -766,7 +747,7 @@ body{
     font-size: 16px;
     line-height: 20px;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .triggers__native-item-subtitle{
         font-weight: 500;   
     font-size: 12px;
@@ -842,24 +823,19 @@ section.gallery{
       flex: 50%;
     }
   }
-  @media (max-width: 530px){
-    .gallery-item{
-      flex: 100%;
-    }
-  }
 
 /* О проекте*/
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .container_max-contacts {
         display: none;
     }
 } 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .container_max-about {
         display: none;
     }
 } 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .container-w-bckgr {
         display: none;
     }
@@ -896,7 +872,7 @@ section.gallery{
 
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 767px) {
     .music__about-text{
         
         font-weight: 400;
@@ -908,7 +884,7 @@ section.gallery{
         
     }
     }
-    @media screen and (max-width: 428px) {
+    @media screen and (max-width: 767px) {
         .music__about-text{
             
             font-weight: 400;
@@ -1198,7 +1174,7 @@ textarea.form__input {
 .privacy {
     text-decoration: underline;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .privacy {
         font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -1214,7 +1190,7 @@ textarea.form__input {
     padding-bottom: 12px;
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .footer__copyright-link {
         font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -1225,7 +1201,7 @@ textarea.form__input {
     }
 } 
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .footer__contacts-link span {
         display: none;
     }
@@ -1269,7 +1245,7 @@ textarea.form__input {
     margin-right: 0;
     
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .projects__inner{
         display: flex;
     flex-wrap: wrap;
@@ -1302,7 +1278,7 @@ textarea.form__input {
     padding: 0px 8px;
     
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .projects__column{
     width: 100%;
     }
@@ -1399,7 +1375,7 @@ textarea.form__input {
     background-repeat: no-repeat;
     margin: auto;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .branch-background{
     width: 428px;
     height: auto;
@@ -1438,7 +1414,7 @@ textarea.form__input {
     line-height: 49px;
     color: #FFFFFF;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .branch__title-text{
         
         font-size: 24px;
@@ -1456,7 +1432,7 @@ textarea.form__input {
     line-height: 130%;
     color: #FFFFFF;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .branch__subtitle-text{
         font-weight: 400;
         font-size: 23px;
@@ -1510,7 +1486,7 @@ textarea.form__input {
     padding-top: 125px;
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .branch__inner{
         flex-wrap: wrap;
         padding-top: 30px;
@@ -1521,7 +1497,7 @@ textarea.form__input {
     flex-direction: column;
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .branch-img{
         width: 100%;
         height: auto;
@@ -1534,7 +1510,7 @@ textarea.form__input {
 .branch__column:last-child{
     width: 50%;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .branch__column:last-child{
         width: 100%;
         height: auto;
@@ -1566,7 +1542,7 @@ textarea.form__input {
     text-align: right;
     color: #C1C0C1;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .branch__colontitle-note-text{
         display: none;
     }
@@ -1585,7 +1561,7 @@ textarea.form__input {
     color: #000000;
     /* margin: 0 0 30px; */ 
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .branch__block-title-text{
         font-size: 21px;
         line-height: 23px;
@@ -1597,7 +1573,7 @@ textarea.form__input {
     max-width: 600px;
     /* top: -154px; */
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .branch__slider{
         max-width: 50%;
         align-self: center;
@@ -1710,7 +1686,7 @@ textarea.form__input {
     padding-top: 50px;
     padding-bottom: 30px;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .video__title-main{
         font-size: 21px;
         line-height: 23px;
@@ -1722,7 +1698,7 @@ textarea.form__input {
     justify-content: space-between;
     width: 1200px;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
     .video__inner{
         width: 100%;
     }
