@@ -1388,6 +1388,11 @@ textarea.form__input {
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/kivu_img.jpg);
     
 }
+.shprs-background {
+    
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/shpr_img.jpg);
+    
+}
 .branch__main-inner {
     display: flex;
     flex-direction: column;

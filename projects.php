@@ -42,13 +42,27 @@ Template Name: projects
                 </div>
                 <div class="projects__column">
                     <div class="projects__block">
-                        <a href="<?php echo get_page_link (165); ?>">
+                        <a href="<?php echo get_page_link (167); ?>">
                             <img class="projects__image" src="<?php the_field('projects_kivu-img'); ?>" alt="">
                         </a>
                         <div class="projects__subtitle"><?php the_field('projects_kivu-title'); ?></div>
                         <div class="projects__text"><?php the_field('projects_kivu-text'); ?></div>
                         <div class="projects__button">
                             <a class="projects__start projects__start-1" href="<?php echo get_page_link (167); ?>">
+                                <span class="projects__link">Подробнее</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__column">
+                    <div class="projects__block">
+                        <a href="<?php echo get_page_link (286); ?>">
+                            <img class="projects__image" src="<?php the_field('projects_shprs-img'); ?>" alt="">
+                        </a>
+                        <div class="projects__subtitle"><?php the_field('projects_shprs-title'); ?></div>
+                        <div class="projects__text"><?php the_field('projects_shprs-text'); ?></div>
+                        <div class="projects__button">
+                            <a class="projects__start projects__start-1" href="<?php echo get_page_link (286); ?>">
                                 <span class="projects__link">Подробнее</span>
                             </a>
                         </div>

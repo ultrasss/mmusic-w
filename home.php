@@ -14,12 +14,14 @@ Template Name: home
                 <h2 class="music__subtitle"><?php the_field('subtitle'); ?></h2>
                 <div class="music__button">
                     <a class="music__start" href="<?php echo get_page_link (110); ?>">
-                        <span class="music__link">НАЧАТЬ</span>
+                        <span class="music__link">НАЧАТЬ!</span>
                     </a>
                 </div> 
             </div>
             <div class="music__column">
+                
                 <img src="<?php the_field('main-img'); ?>" alt="">
+                
             </div>
         </div>
     </div>
