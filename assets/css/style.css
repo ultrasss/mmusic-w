@@ -1,20 +1,28 @@
 /*Общие стили */
-*,
-*::after,
-*::before{
+html {
     box-sizing: border-box;
 }
-ul{
-    padding: 0;
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul {
     margin: 0;
+    padding: 0;
     list-style: none;
 }
-li{
+li {
+    list-style: none;
     padding-left: 0;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+img {
+    max-width: 100%;
 }
 body{
     font-family: "Montserrat", sans-serif;
@@ -156,8 +164,13 @@ body{
     font-style: normal;
     font-weight: 700;   
     font-size: 18px;
-    line-height: 22px;
     color: #FFFFFF;
+    line-height: 22px;
+    padding: 0 20px;
+    transition: all .3s;
+}
+.logo a:hover{
+    text-shadow: 13px 3px 15px #ffffff;
 }
 .header__burger {
     display: none;

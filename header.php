@@ -41,7 +41,7 @@
             <div class="header__body">
                 <div class="logo">
                     <?php the_custom_logo(); ?>
-                    <a href="<?php echo get_page_link (15); ?>" class="header__link">M | Music</a>
+                    <a href=<?php echo get_page_link (15); ?>>M | Music</a>
                 </div>
                 <div class="header__burger">
                     <span></span>
