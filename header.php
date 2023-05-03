@@ -46,8 +46,7 @@
                 <div class="header__burger">
                     <span></span>
                 </div>
-                <nav class="header__menu">
-                    <ul class="header__list">
+                <ul class="header__list">
                         <li>
                             <a href="<?php echo get_page_link (15); ?>" class="header__link">Главная</a>
                         </li>
@@ -57,8 +56,7 @@
                         <li>
                             <a href="#" class="header__link">Контакты</a>
                         </li>
-                    </ul>
-                </nav>
+                </ul>
                 <a href="tel:<?php the_field('phone-number', 15); ?>" class="phone__number">
                     <div class="phone__item"> 
                         <img class="phone__img" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone">

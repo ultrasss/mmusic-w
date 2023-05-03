@@ -57,8 +57,19 @@ body{
 /* стили */
 
 .container{
+    
+    padding: 0 10px;
     margin: 0 auto;
-    padding: 0 5px;
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1220px;
+}
+}
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 950px;
+}
 }
  
 .container_max-w{
@@ -177,24 +188,24 @@ body{
 }
 .header__list {
     display: flex;
+    gap: 0 20px;
     align-items: center;
     position: relative;
     z-index: 2;
-    
 }
-.header__list li{
+/* .header__list li{
     margin: 0px 0px 0px 0px;
 }
 .header__list li + .header__list li{
     padding-left: 10px;
-}
+} */
 .header__link {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     color: #FFFFFF;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     transition: all .3s;
 }
 .header__link:hover{
@@ -203,6 +214,7 @@ body{
     text-shadow: 13px 3px 15px #ffffff;
     /* color: rgb(155, 11, 54);  */
 }
+
 .phone__item {
     position: relative;
     display: flex;

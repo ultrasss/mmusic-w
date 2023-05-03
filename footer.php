@@ -1,4 +1,4 @@
-<footer class="footer container_max-w gray-color">
+<footer class="footer container gray-color">
         <div class="container">
             <div class="footer__inner">
                 <div class="logo">
