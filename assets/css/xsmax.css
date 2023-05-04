@@ -1,0 +1,253 @@
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
+    .title{
+        font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.065em;
+    padding-top: 20px;
+    }
+    .container {
+        width: 281px;
+    }
+    .container_max-w {
+        width: 428px;;
+    }
+    .logo a {   
+            font-size: 8px;
+            line-height: 8px;
+    }
+    .custom-logo {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            
+    }
+    .menu__list {
+        padding: 0px;
+        display: flex;
+        align-items: center
+    }
+    .menu__item a {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 0 10px;
+    }
+    .phone__item span {
+        display: none;
+    }
+    .phone__item a {
+    font-weight: 400;
+    font-size: 8px;
+    }
+    .social {
+        display: none;
+    }
+    .music__inner {
+        flex-direction: column;
+    }
+    .music__title {
+        font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 20px 0 8px;
+    }
+    .music__subtitle {
+        margin: 0 0 15px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    }
+    .music__button {
+        width: 58px;
+        height: 14px;
+        border-radius: 5px;
+    }
+
+    .music__start {
+        width: 58px;
+        height: 14px;
+        border-radius: 5px;
+    }
+
+    .music__link {
+        font-size: 10px;
+    }
+     .music__column {
+        text-align: center;
+    }
+            .music__column img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        /* margin-left: 187px; */
+        }
+        .music__slider {
+            display: none;
+    }
+    
+        .container-noAdd {
+            display: none;
+            
+        } 
+    
+        .triggers__text {
+            padding-bottom: 20px;
+        }
+     
+    
+        .triggers__native {
+            flex-direction: column;
+            padding-bottom: 30px;
+        } 
+    
+        .triggers__native-item-title {
+            font-weight: 900;   
+        font-size: 15px;
+        line-height: 16px;
+        }
+     
+    
+        .triggers__native-item-subtitle{
+            font-weight: 500;   
+        font-size: 12px;
+        line-height: 12px;
+        } 
+    
+        .container_max-contacts {
+            display: none;
+        }
+     
+    
+        .container_max-about {
+            display: none;
+        } 
+    
+        .container-w-bckgr {
+            display: none;
+        }
+    
+    
+        .music__about-info {
+            width: 30%; 
+        }
+    
+        .music__about-text{
+            
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            padding-top: 5px;
+            text-align: justify;
+            letter-spacing: 0;
+            
+        }
+        
+            .contacts__column-image {
+                display: none;
+            }
+    
+        
+            .footer__copyright {
+                margin-right: 5px;
+            }
+    
+        
+            .privacy {
+                font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-size: 12px;
+            color: #FFFFFF;
+            font-weight: 400;
+                
+            }
+    
+        
+            .footer__copyright-link {
+                font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-size: 12px;
+            color: #FFFFFF;
+            font-weight: 400;
+                
+            }
+        
+        
+            .footer__contacts-link span {
+                display: none;
+            }
+        
+        .projects__inner{
+            display: flex;
+        flex-wrap: wrap;
+        }
+    
+    
+        .projects__column{
+        width: 100%;
+        }
+    
+        .branch-background{
+        width: 414px;
+        height: auto;
+        }
+    
+        .branch__inner{
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
+    
+        .branch-img{
+            width: 100%;
+            height: auto;
+        }
+    
+        .branch__colontitle-note-text{
+            display: none;
+        }
+    
+        .branch__block-title-text{
+            font-size: 21px;
+            line-height: 23px;
+        }
+    
+        .branch__slider{
+            max-width: 100%;
+            align-self: center;
+        }
+    
+        .video__title-main{
+            font-size: 21px;
+            line-height: 23px;
+        }
+    
+        .video__inner{
+            width: 100%;
+        }
+    
+        .branch__title-text{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+        }
+    
+        .branch__subtitle-text{
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 127%;
+        }
+    
+        .branch__column:last-child{
+            width: 100%;
+            height: auto;
+            text-align: justify;
+        }
+    
+        .branch__slider{
+            max-width: 50%;
+            align-self: center;
+        }
+} 
