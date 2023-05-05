@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
          <div class="container">
             <div class="header__body">
                 <div class="logo">
@@ -84,4 +84,4 @@
                 </div>
             </div>
          </div>   
-    </header>
+    </header> -->

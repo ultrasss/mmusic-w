@@ -104,7 +104,7 @@ if( $myposts ){
         </div>
     </div>
 </section>
-<section class="gallery">
+<!-- <section class="gallery">
     <div class="container_max-w">
         <div class="container container-w">
         <a class="title">Мы познаем мир через музыку</a>
@@ -144,8 +144,8 @@ if( $myposts ){
     </div>
     </div>
         </div>
-</section>
-<section class="music__about">
+</section> -->
+<!-- <section class="music__about">
     <div class="container_max-w">
         <div class="container_max-about">
             <div class="container container-w container-w-bckgr">
@@ -158,10 +158,9 @@ if( $myposts ){
             </div>
         </div>
     </div>
-</section>
-<section class="contacts">
-    <!-- <div class="container_max-contacts"> -->
-        <div class="container">
+</section> -->
+<!-- <section class="contacts">
+            <div class="container">
             <div class="contacts__inner">
                 <div class="contacts__column-form">
                     <div class="form">
@@ -223,8 +222,7 @@ if( $myposts ){
                 </div>
             </div>
         </div>
-    <!-- </div> -->
-</section>
+</section> -->
 
 <?php get_footer(); ?>
 
