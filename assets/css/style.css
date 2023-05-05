@@ -260,12 +260,12 @@ body{
 .music__column {
     overflow: hidden;
     margin: 0 0 20px 0;
-
 }
 @media screen and (max-width: 767px) {
     .music__column {
         text-align: center;
     }
+}
 .music__column img {
     width: 100%;
     height: 100%;
