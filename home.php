@@ -11,26 +11,24 @@ Template Name: home
         <div class="music__inner">
             <div class="music__column">
                 <h1 class="music__title"><?php the_field('title'); ?></h1>
-                <h2 class="music__subtitle"><?php the_field('subtitle'); ?></h2>
+                <p class="music__subtitle"><?php the_field('subtitle'); ?></h2>
                 <div class="music__button">
                     <a class="music__start" href="<?php echo get_page_link (110); ?>">
                         <span class="music__link">НАЧАТЬ!</span>
                     </a>
                 </div> 
             </div>
-            <div class="music__column">
+            <!-- <div class="music__column">
                 
                 <img src="<?php the_field('main-img'); ?>" alt="">
                 
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
 <section class="slider">
-<div class="container_max-w">
-    <div class="container container-w">
-        <div class="container-noAdd">
-            <div class="music__slider">
+    <div class="container">
+        <div class="music__slider">
 <?php
 global $post;
 $myposts = get_posts([ 
@@ -41,33 +39,30 @@ if( $myposts ){
 	foreach( $myposts as $post ){
 		setup_postdata( $post );
 ?>
-                <div class="music__slider-item">
-                    <div class="music__slider-item-block">
-                        <a href="<?php echo get_page_link (110); ?>">
-                            <div class="music__slider-text1"><?php the_title(); ?></div>
-                        </a>
-                        <img class="music__slider-arrow" src="<?php bloginfo('template_url'); ?>/assets/img/music-slider-arrow.svg" alt="">  
-                    </div>
-                    <div>
-                        <?php the_post_thumbnail(
-                            array(129, 129),
-                            array(
-                                'class' => 'music__slider-image'
-                            )
-                        ); ?>
-                    </div>
+            <div class="music__slider-item">
+                <div class="music__slider-item-block">
+                    <a href="<?php echo get_page_link (110); ?>">
+                        <div class="music__slider-text1"><?php the_title(); ?></div>
+                    </a>
+                    <img class="music__slider-arrow" src="<?php bloginfo('template_url'); ?>/assets/img/music-slider-arrow.svg" alt="">  
                 </div>
-<?php } } wp_reset_postdata(); ?>      
+                <div>
+                    <?php the_post_thumbnail(
+                        array(129, 129),
+                        array(
+                            'class' => 'music__slider-image'
+                        )
+                    ); ?>
+                </div>
             </div>
+<?php } } wp_reset_postdata(); ?>      
         </div>
     </div>
-</div>
 </section>
 
 <section class="triggers">
-    <div class="container_max-w">
-        <div class="container container-w">
-            <div class="triggers__inner">
+        <div class="container">
+            <!-- <div class="triggers__inner"> -->
                 <div class="triggers__text">
                     <a class="title">Почему музыку изучают</a>                    
                 </div>
@@ -100,66 +95,70 @@ if( $myposts ){
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
-    </div>
 </section>
-<!-- <section class="gallery">
-    <div class="container_max-w">
-        <div class="container container-w">
+<section class="gallery">
+    <!-- <div class="container_max-w"> -->
+    <div class="container">
         <a class="title">Мы познаем мир через музыку</a>
         <div class="gallery-list">
-      <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic1.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic1.jpg" alt="alt">
-      </a>
-      <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic2.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic2.jpg" alt="alt">
-      </a>
-      <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic3.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic3.jpg" alt="alt">
-      </a>
-      <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic4.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic4.jpg" alt="alt">
-      </a>
-      <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic5.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic5.jpg" alt="alt">
-      </a>
-      <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic6.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic6.jpg" alt="alt">
-      </a>
-      <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic7.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic7.jpg" alt="alt">
-      </a>
-      <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic8.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic8.jpg" alt="alt">
-      </a>
-    </div>
-    </div>
+            <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic1.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic1.jpg" alt="alt">
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic2.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic2.jpg" alt="alt">
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic3.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic3.jpg" alt="alt">
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic4.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic4.jpg" alt="alt">
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic5.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic5.jpg" alt="alt">
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic6.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic6.jpg" alt="alt">
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic7.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic7.jpg" alt="alt">
+            </a>
+            <a href="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic8.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/pic8.jpg" alt="alt">
+            </a>
         </div>
-</section> -->
-<!-- <section class="music__about">
-    <div class="container_max-w">
-        <div class="container_max-about">
-            <div class="container container-w container-w-bckgr">
-                <div class="music__about-info">
-                    <a class="title title-about">О проекте</a> 
-                    <a class="subtitle"><br><?php the_field('about-subtitle'); ?></a>
-                    <a class="title title-about"><?php the_field('about-text'); ?><a>
-                    <a class="music__about-text music__about-text-next" href="<?php echo get_page_link (110); ?>">Читать больше -></a>
-                </div>
+    </div>
+        <!-- </div> -->
+</section>
+<section class="music__about">
+    <!-- <div class="container_max-w"> -->
+        <!-- <div class="container_max-about"> -->
+            <div class="container">
+                <div class="music__about_inner">
+                    <div class="music__about-item">
+                        <a class="title title-about">О проекте</a> 
+                        <a class="subtitle"><br><?php the_field('about-subtitle'); ?></a>
+                        <a class="title title-about"><?php the_field('about-text'); ?><a>
+                        <a class="music__about-text music__about-text-next" href="<?php echo get_page_link (110); ?>">Читать больше -></a>
+                    </div>
+                    <!-- <img src="../assets/img/music_about_bkgr.jpg" alt="alt"> -->
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/music_about_bkgr.jpg" alt="alt">
+              </div>
+
             </div>
-        </div>
-    </div>
-</section> -->
-<!-- <section class="contacts">
+        <!-- </div> -->
+    <!-- </div> -->
+</section>
+<section class="contacts">
             <div class="container">
             <div class="contacts__inner">
                 <div class="contacts__column-form">
@@ -222,7 +221,7 @@ if( $myposts ){
                 </div>
             </div>
         </div>
-</section> -->
+</section>
 
 <?php get_footer(); ?>
 

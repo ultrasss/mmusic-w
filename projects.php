@@ -8,8 +8,7 @@ Template Name: projects
 
 
 <section class="projects">
-    <div class="container_max-w"> 
-        <div class="container container-w margin__area">
+        <div class="container">
             <div class="projects__title"><?php the_field('projects-title'); ?></div>
             <div class="projects__inner">
                 <div class="projects__column">
@@ -56,13 +55,13 @@ Template Name: projects
                 </div>
                 <div class="projects__column">
                     <div class="projects__block">
-                        <a href="<?php echo get_page_link (286); ?>">
+                        <a href="<?php echo get_page_link (280); ?>">
                             <img class="projects__image" src="<?php the_field('projects_shprs-img'); ?>" alt="">
                         </a>
                         <div class="projects__subtitle"><?php the_field('projects_shprs-title'); ?></div>
                         <div class="projects__text"><?php the_field('projects_shprs-text'); ?></div>
                         <div class="projects__button">
-                            <a class="projects__start projects__start-1" href="<?php echo get_page_link (286); ?>">
+                            <a class="projects__start projects__start-1" href="<?php echo get_page_link (280); ?>">
                                 <span class="projects__link">Подробнее</span>
                             </a>
                         </div>
@@ -70,7 +69,6 @@ Template Name: projects
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 

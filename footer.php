@@ -1,15 +1,14 @@
 <footer class="footer container gray-color">
         <div class="container">
             <div class="footer__inner">
-                <div class="logo">
-                    <?php the_custom_logo(); ?>
-                    <a href="<?php echo get_page_link (15); ?>" class="logo__text">M | Music</a>
-                </div>
+                
+                    
+                
                 <div class="footer__copyright">
                     <a class="footer__copyright-link">2022 © Все права защищены</a>
                     <a class="privacy" href="<?php echo get_page_link (90); ?>">Политика конфиденциальности</a>
                 </div>
-
+                <?php the_custom_logo(); ?>
                 <div class="footer__contacts">
                     <a class="footer__contacts-link" href="tel:<?php the_field('phone-number', 15); ?>">
                         <img class="footer__contacts-img" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone">

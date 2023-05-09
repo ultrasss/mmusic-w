@@ -36,52 +36,38 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
          <div class="container">
-            <div class="header__body">
-                <div class="logo">
-                    <?php the_custom_logo(); ?>
-                    <a href=<?php echo get_page_link (15); ?>>M | Music</a>
-                </div>
-                <div class="header__burger">
-                    <span></span>
-                </div>
-                <ul class="header__list">
-                        <li>
-                            <a href="<?php echo get_page_link (15); ?>" class="header__link">Главная</a>
-                        </li>
-                        <li>
-                            <a href="<?php echo get_page_link (110); ?>" class="header__link">О проекте</a>
-                        </li>
-                        <li>
-                            <a href="#" class="header__link">Контакты</a>
-                        </li>
+            <nav class="nav">
+                <ul class="header__menu">
+                    <li>
+                        <a href="<?php echo get_page_link (15); ?>" class="header__link">Главная</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_page_link (110); ?>" class="header__link">О проекте</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Контакты</a>
+                    </li>
+                </ul>   
+                <?php the_custom_logo(); ?>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="<?php the_field('vk', 15); ?>" class="social__link">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/VK_icon.png" alt="Иконка Вконтакте" width="65" height="65">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="<?php the_field('telegram', 15); ?>" class="social__link">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/TG_icon.png" alt="Иконка Телеграма" width="65" height="65">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="<?php the_field('youtube', 15); ?>" class="social__link">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/YT_icon.png" alt="Иконка Youtube" width="65" height="65">
+                        </a>
+                    </li>
                 </ul>
-                <a href="tel:<?php the_field('phone-number', 15); ?>" class="phone__number">
-                    <div class="phone__item"> 
-                        <img class="phone__img" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone">
-                        <span><?php the_field('phone', 15); ?></span>
-                    </div>
-                </a>    
-                <div class="social">
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a href="<?php the_field('vk', 15); ?>" class="social__link">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/VK_icon.png" alt="Иконка Вконтакте" width="65" height="65">
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="<?php the_field('telegram', 15); ?>" class="social__link">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/TG_icon.png" alt="Иконка Телеграма" width="65" height="65">
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a href="<?php the_field('youtube', 15); ?>" class="social__link">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/YT_icon.png" alt="Иконка Youtube" width="65" height="65">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </nav>
          </div>   
-    </header> -->
+    </header>
