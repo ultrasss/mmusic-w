@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="<?php the_field('youtube', 15); ?>" class="social__link">
+                        <a href="<?php the_field('youtube_chanell', 15); ?>" class="social__link">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/YT_icon.png" alt="Иконка Youtube" width="65" height="65">
                         </a>
                     </li>
