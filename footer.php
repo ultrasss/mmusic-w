@@ -1,9 +1,6 @@
 <footer class="footer container gray-color">
         <div class="container">
-            <div class="footer__inner">
-                
-                    
-                
+            <div class="footer__inner">                             
                 <div class="footer__copyright">
                     <a class="footer__copyright-link">2022 © Все права защищены</a>
                     <a class="privacy" href="<?php echo get_page_link (90); ?>">Политика конфиденциальности</a>
@@ -33,4 +30,4 @@
     <script src="js/form.js"></script> -->
 </body>
 
-</html>
+</html>  

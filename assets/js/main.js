@@ -13,6 +13,23 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1       
     });
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.header__menu');
+
+    menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('header__menu--active');
+    });
     
 });
+
+
+// $(function(){
+// const menuBtn = document.querySelector('.menu-btn');
+// const menu = document.querySelector('.header__menu');
+
+// menuBtn.addEventListener('click', () => {
+//     menu.classList.toggle('header__menu--active');
+// });
+// });
 

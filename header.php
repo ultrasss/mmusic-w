@@ -39,6 +39,11 @@
     <header class="header">
          <div class="container">
             <nav class="nav">
+                <button class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="header__menu">
                     <li>
                         <a href="<?php echo get_page_link (15); ?>" class="header__link">Главная</a>
