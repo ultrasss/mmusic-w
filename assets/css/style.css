@@ -65,11 +65,6 @@ body{
     padding: 0 10px;
     margin: 0 auto;
 }
-/* @media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1220px;
-}
-}*/
 @media screen and (max-width: 1249px) {
     .container {
         max-width: 950px;
@@ -281,10 +276,18 @@ body{
 }
 @media screen and (max-width: 820px) {
     .social__item img {
+        max-width: 100%;
         width: auto;
         height: 100%;
     }
 }
+@media screen and (min-width: 300px) and (max-width: 530px) {
+    .social__item img {
+        height: auto;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 680px) {
     .nav {
         grid-template-columns: 1fr 2fr 1fr;
@@ -1148,6 +1151,30 @@ textarea.form__input {
 
 /* Школа филармонического слушателя */
 /* первый экран */
+.shfs__main {
+	background-image: url(../img/shfs_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.shfm__main {
+	background-image: url(../img/shfm_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.kivu__main {
+	background-image: url(../img/kivu_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.shprs__main {
+	background-image: url(../img/shpr_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
 .branch-background {
     width: 1600px;
     height: 1066px;

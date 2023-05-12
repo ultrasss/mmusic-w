@@ -5,8 +5,8 @@ Template Name: shprs
 ?>
 <?php get_header(); ?>
 
-    <div class="branch-background shprs-background">
-        <section class="branch__main">
+    
+        <section class="shprs__main">
             <div class="container">
                 <div class="branch__main-inner">
                     <div class="branch__content">
@@ -25,7 +25,6 @@ Template Name: shprs
                 </div>
             </div>      
         </section>
-    </div>
     <section class="branch__block">
         <a name="b__link"></a>
         <div class="container_max-w">

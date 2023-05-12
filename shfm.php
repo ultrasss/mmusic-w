@@ -5,8 +5,8 @@ Template Name: shfm
 ?>
 
 <?php get_header(); ?>
-    <div class="branch-background shfm-background">
-                <section class="branch__main">
+    
+                <section class="shfm__main">
             <div class="container">
                 <div class="branch__main-inner">
                     <div class="branch__content">
@@ -23,7 +23,7 @@ Template Name: shfm
                         </div>   
                     </div>
                 </div>
-            </div>      
+                  
         </section>
     </div>
     <section class="branch__block">

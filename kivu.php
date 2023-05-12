@@ -4,8 +4,8 @@ Template Name: kivu
 */
 ?>
 <?php get_header(); ?>
-    <div class="branch-background kivu-background">
-        <section class="branch__main">
+    
+        <section class="kivu__main">
             <div class="container">
                 <div class="branch__main-inner">
                     <div class="branch__content">
@@ -22,7 +22,7 @@ Template Name: kivu
                         </div>  
                     </div>
                 </div>
-            </div>      
+                  
         </section>
     </div>
     <section class="branch__block">

@@ -5,8 +5,8 @@ Template Name: shfs
 ?>
 <?php get_header(); ?>
 
-    <div class="branch-background shfs-background">
-        <section class="branch__main">
+    
+        <section class="shfs__main">
             <div class="container">
                 <div class="branch__main-inner">
                     <div class="branch__content">
@@ -25,7 +25,7 @@ Template Name: shfs
                 </div>
             </div>      
         </section>
-    </div>
+
     <section class="branch__block">
         <a name="b__link"></a>
         <div class="container_max-w">
