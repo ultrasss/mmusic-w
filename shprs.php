@@ -5,35 +5,27 @@ Template Name: shprs
 ?>
 <?php get_header(); ?>
 
-    
-        <section class="shprs__main">
-            <div class="container">
-                <div class="branch__main-inner">
-                    <div class="branch__content">
-                        <div class="branch__title">
-                            <a class="branch__title-text"><?php the_field('shprs-branch-title'); ?></a>
-                        </div>
-                        <div class="branch__subtitle">
-                            <a class="branch__subtitle-text"><?php the_field('shprs-branch-subtitle'); ?></a>
-                        </div>
-                        <div class="branch__button">
-                            <a class="branch__start branch__start-1" href="#b__link">
-                                <span class="branch__link">начать</span>
-                            </a>
-                        </div>  
-                    </div>
-                </div>
-            </div>      
-        </section>
+<section class="shprs__main">
+    <div class="container">
+            <h1 class="branch__title-text"><?php the_field('shprs-branch-title'); ?></h1>
+            <p class="branch__subtitle-text"><?php the_field('shprs-branch-subtitle'); ?></p>
+            <div class="branch__button">
+                <a class="branch__start branch__start-1" href="#b__link">
+                    <span class="branch__link">начать</span>
+                </a>
+            </div>
+    </div> 
+</section>
+
     <section class="branch__block">
         <a name="b__link"></a>
         <div class="container_max-w">
             <div class="container container-w">
                 <div class="branch__inner">
-                    <div class="branch__column">
+                    <!-- <div class="branch__column">
                         <img class="branch-img" src="<?php the_field('shprs-branch-img'); ?>" alt="">
                     </div>
-                    <div class="branch__column">
+                    <div class="branch__column"> -->
                         <div class="branch__colontitle">
                             <div class="branch__colontitle-line"></div>
                             <div class="branch__colontitle-note">
@@ -55,7 +47,6 @@ Template Name: shprs
                                     setup_postdata( $post );
                             ?>
                             <div class="branch__slider-item">
-                                <!-- <div> -->
                                     <?php the_post_thumbnail(
                                     array(600, 338)
                                     // ,
@@ -63,7 +54,6 @@ Template Name: shprs
                                     //     'class' => 'branch__slider-image'
                                     // )
                                     ); ?>
-                                <!-- </div> -->
                             </div>
                             <?php } } wp_reset_postdata(); ?>
                         </div>
@@ -76,8 +66,7 @@ Template Name: shprs
         </div>
     </section>
     <section class="video">
-        <div class="container_max-w">
-            <div class="container container-w">
+            <div class="container">
                 <div class="video__title-main">
                     <a class="title"><?php the_field('shprs-video__title-main'); ?></a>
                 </div>
@@ -166,7 +155,7 @@ Template Name: shprs
                     
                 </div>
             </div>
-        </div>
+
     </section>
      
     <?php get_footer(); ?>

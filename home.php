@@ -11,7 +11,7 @@ Template Name: home
         <div class="music__inner">
             <div class="music__column">
                 <h1 class="music__title"><?php the_field('title'); ?></h1>
-                <p class="music__subtitle"><?php the_field('subtitle'); ?></h2>
+                <p class="music__subtitle"><?php the_field('subtitle'); ?></p>
                 <div class="music__button">
                     <a class="music__start" href="<?php echo get_page_link (110); ?>">
                         <span class="music__link">НАЧАТЬ!</span>
