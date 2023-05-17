@@ -1015,6 +1015,10 @@ textarea.form__input {
     }
 }
 /* СТРАНИЦА ПОЛИТИКИ КОНФИДЕНЦАЛЬНОСТИ */
+.сonfidency {
+    background-color: white;
+    color: black
+}
 .privacy__textarea {
     /* box-shadow: 1px 1px 2px 0px #eceef2; */
     /* background-color: #eceef2; */

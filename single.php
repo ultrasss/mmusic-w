@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <?php the_post(); ?>
-<div class="container_max-w">
-    <div class="container container-w margin__area">
+<section class="сonfidency">
+
+
+    <div class="container">
         <div class="privacy__textarea">
             <div class="privacy__item">
                 <a class="privacy__title">Политика конфиденциальности. Стандартная форма.</a>
@@ -11,7 +13,8 @@
             <?php the_content(); ?> 
         </div>
     </div>
-</div>
+
+</section>
 
 
 <?php get_footer(); ?>
